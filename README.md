@@ -17,7 +17,7 @@ This project displays real-time stock prices on a **Waveshare ESP32-S3 Touch LCD
 - Garbage collection integrated to prevent memory leaks and crashes.
 
 ## Prerequisites
-- **MicroPython Firmware**: Ensure your ESP32-S3 is flashed with MicroPython. Follow the [official MicroPython guide](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html) for installation or use the firmware included in this project.
+- **Custom MicroPython Firmware included**: Ensure your ESP32-S3 is flashed with the included MicroPython. Follow the [official MicroPython guide](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html) for installation, use the firmware included in this project since it includes GC9A01 display driver and urequests. 
 - **Google Sheets**: Publish your stock data as a CSV file. Replace the `GOOGLE_SHEETS_URL` in the script with your published CSV URL.
 - **Wi-Fi Credentials**: Update the `WIFI_SSID` and `WIFI_PASSWORD` in the script with your Wi-Fi credentials.
 
@@ -34,13 +34,13 @@ The main script is `main.py`.
 
 # Install Required Libraries
 
-Ensure the following libraries are available on your ESP32-S3:
+Libraries that are used:
 
 - `gc9a01`: For controlling the LCD display.
 - `vga1_bold_16x32`: Font for rendering text on the display.
 - `urequests`: For making HTTP requests to fetch stock data.
 
-These libraries are included in the `lib/` folder of this repository. Upload them to your device.
+Upload vga1_bold_16x32 to the root folder of your device.
 
 # Configure Google Sheets
 
