@@ -17,15 +17,15 @@ This project displays real-time stock prices on a **Waveshare ESP32-S3 Touch LCD
 - Garbage collection integrated to prevent memory leaks and crashes.
 
 ## Prerequisites
-- **MicroPython Firmware**: Ensure your ESP32-S3 is flashed with MicroPython. Follow the [official MicroPython guide](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html) for installation.
+- **MicroPython Firmware**: Ensure your ESP32-S3 is flashed with MicroPython. Follow the [official MicroPython guide](https://docs.micropython.org/en/latest/esp32/tutorial/intro.html) for installation or use the firmware included in this project.
 - **Google Sheets**: Publish your stock data as a CSV file. Replace the `GOOGLE_SHEETS_URL` in the script with your published CSV URL.
 - **Wi-Fi Credentials**: Update the `WIFI_SSID` and `WIFI_PASSWORD` in the script with your Wi-Fi credentials.
 
 ## Setup
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/esp32-s3-stock-ticker.git
-   cd esp32-s3-stock-ticker
+   git clone https://github.com/SuperGoodMike/Desktop-Stock-Ticker.git
+   cd Desktop-Stock-Ticker
    # Upload the Code
 
 Use a tool like Thonny IDE or ampy to upload the script to your ESP32-S3.
